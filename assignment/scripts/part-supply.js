@@ -102,8 +102,14 @@ console.log('Total parts:', totalParts);
 console.log('9. Filling boxes with a "while" loop');
 let parts = 572;
 let boxesFilled = 0;
-while(boxesFilled )
-
+//Every loop, we should take away 7 parts and add 1 box. We can stop the loop when
+// there are less than 7 parts remaining. Those are the leftover parts.
+while(parts - 7 >= 0){
+  boxesFilled++;
+  parts-=7;
+}
+console.log("Boxes filled:", boxesFilled);
+console.log("Parts left over:", parts);
 
 
 // DO NOT MODIFY
